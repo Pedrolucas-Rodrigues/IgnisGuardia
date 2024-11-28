@@ -1,0 +1,160 @@
+/* Resetando alguns estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel', serif; /* Fonte medieval */
+    background-color: #1c1c1c; /* Fundo escuro */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+
+    background-image: url('images/fase1.jpg') ; /* Efeito suave na transição do fundo */
+    padding: 20px;
+    margin: 0;
+    min-height: 100vh; /* Garante que o fundo cubra toda a altura da tela */
+    background-repeat: no-repeat; /* Impede repetição da imagem */
+}
+
+    
+
+
+.game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2; /* Garantir que o conteúdo fique acima do fundo */
+    position: relative;
+}
+
+button {
+    background-color: rgba(0, 128, 0, 0.7); /* Cor verde com opacidade para visibilidade no fundo */
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#answers button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+/* Container do jogo */
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente */
+    border-radius: 15px;
+    padding: 25px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(245, 241, 241, 0.5);
+}
+
+/* Estilo do título */
+h1 {
+    color: #2b960a; /* Dourado para destaque */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
+}
+
+/* Pergunta */
+#question {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #050505;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Opções de resposta */
+#answers button {
+    background-color: #185e27; /* Laranja para ação e destaque */
+    color: white;
+    border: none;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+#answers button:hover {
+    background-color: #64a767;
+    transform: scale(1.1);
+}
+
+#response-box {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #27ae60; /* Verde para mensagens de feedback */
+    font-weight: bold;
+}
+
+/* Botão "Próximo" */
+#next-button {
+    background-color: #2ecc71; /* Verde para ações positivas */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    display: none;
+    transition: background-color 0.3s ease;
+}
+
+#next-button:hover {
+    background-color: #27ae60;
+}
+
+/* Estilo da mensagem final */
+#final-result {
+    margin-top: 40px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #e74c3c;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#answers button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
